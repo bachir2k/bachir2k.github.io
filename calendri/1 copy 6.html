@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day</title>
+    <link rel="stylesheet" href="./day.css">
+    <style>
+        html{
+            overflow: hidden;
+            background-image: url('https://wallpapercave.com/dwp2x/wp11919072.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        h3{
+            color: rgb(253, 162, 177);
+            font-size: 3em;
+            font-weight: 700;
+            opacity: 0;
+            animation: h3 2.1s  ease-in-out forwards;
+            animation-delay: .4s;
+        }
+        /* animation h3 */
+        @keyframes h3 {
+            0% {
+                transform: translateX(-30px);
+                opacity:0 ;
+            }
+            50% {
+                transform: translateX(0);
+                opacity: 1;
+            } 100% {
+                transform: translateX(110%);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Bonne journée</h3>
+    <div class="elt">
+        <button><a href="./1 copy 5.html">jour precedant</a></button>
+        <p>6 Avril</p>
+        <button><a href="./1 copy 7.html">jour suivant</a></button>
+    </div>
+</body>
+</html>

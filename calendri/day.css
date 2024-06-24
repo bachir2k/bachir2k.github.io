@@ -1,0 +1,33 @@
+.elt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+}
+
+button{
+    width: 130px;
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform .4s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+p{
+    font-size: 3em;
+    font-weight: 700;
+}
+
