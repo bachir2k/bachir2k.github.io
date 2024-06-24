@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./port.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d"></div>
+    <div class="content">
+
+        <!-- l'entéte avec la navbar -->
+        <div class="link"id="Link">
+            <div class="logo">Portfo<span>lio</span></div>
+            <nav class="links">
+                <a href="#">Home</a>
+                <a href="#About">About Me</a>
+                <a href="#creation">Creation</a>
+                <a href="../Electronique/Télé/télé.html">Visual</a>
+            </nav>
+            <button class="btn-flow"><a href="../form/form-1.html">follow me</a></button>
+        </div>
+        
+        <!-- présentatioin de la page -->
+      <section class="home">
+            <div class="resume">
+                <h3>Hello, it's Me</h3>
+                <h1>Bachir Sall</h1>
+                <h3>and i'm <Span>frontend Developer</Span></h3>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum accusamus,<br> 
+                    neque corporis dolorem consequuntur maxime.
+                </p>
+                <a href="https://www.instagram.com  "><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+                <a href="https://mail.google.com/"><ion-icon class="icon" name="logo-google"></ion-icon></a>
+                <a href="https://twitter.com/login"><ion-icon class="icon" name="logo-twitter"></ion-icon></a>
+
+            </div>
+            <div class="img"><img src="./IMG_20220502_111930f.jpg" alt=""></div>
+        </section>
+            
+            <a href="#down"><span class="bas"><ion-icon name="arrow-down-circle"></ion-icon></span></a>
+            
+    </div>      
+
+    
+    <section class="About collect" id="About">
+        <h1><a href="#Link">About Me</a></h1>
+        <div class="description">
+
+            <div class="Pro">
+                <h5>Job</h5>
+                <p> 
+                   <b> I</b>'m a frontend Developer. I started at ESP as a beginner developer with my sponsors who have 2 years of experience on the subject.Now I started looking for experience and skills.
+                </p>
+            </div>
+            <div class="Pro">
+                <h5>Sports</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel culpa natus qui iste ratione, vero pariatur eum, optio labore consequatur cum magni eveniet autem adipisci?
+                </p>            
+            </div>
+            <div class="Pro">
+                <h5>Otaku</h5>  
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat perspiciatis corrupti exercitationem, maiores earum dolor et voluptatibus saepe deleniti, eveniet itaque ut tempora cum quasi!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="creation collect" id="creation">
+        <h1>  </h1>
+        <a href="#Link"><h1>My creation</h1></a>
+        
+               <iframe src="../Electronique/calendri/calendirer.html" frameborder="0" class="Page1" align="right"></iframe>
+               <iframe src="../Electronique/calcul/cal.html" frameborder="0" class="page2"></iframe>
+
+        <a href="#Links"><ion-icon id="down" class="btn-up" name="arrow-up-circle"></ion-icon></a>
+
+    </section>
+
+
+        
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+    function collect() {
+        var collects = document.querySelectorAll(".collect");
+        for (var i = 0; i < collects.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = collects[i].getBoundingClientRect().top;
+          var elementVisible = 100;
+          if (elementTop < windowHeight - elementVisible) {
+            collects[i].classList.add("active");
+          } else {
+            collects[i].classList.remove("active");
+          }
+        }
+      }
+      window.addEventListener("scroll", collect);
+    
+    
+    
+    
+    </script>
+
+</body>
+</html>
