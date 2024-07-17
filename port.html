@@ -9,20 +9,20 @@
 </head>
 <body>
     <div class="d"></div>
-    <div class="content">
-
-        <!-- l'entéte avec la navbar -->
-        <div class="link"id="Link">
-            <div class="logo">Portfo<span>lio</span></div>
-            <nav class="links">
-                <a href="#">Home</a>
-                <a href="#About">About Me</a>
+    
+    <!-- l'entéte avec la navbar -->
+    <div class="link" id="Link">
+        <div class="logo">Portfo<span>lio</span></div>
+        <div class="links">
+            <a href="#">Home</a>
+            <a href="#About">About Me</a>
                 <a href="#creation">Creation</a>
                 <a href="Télé/télé.html">Visual</a>
-            </nav>
+            </div>
             <button class="btn-flow"><a href="./form/form-1.html">follow me</a></button>
         </div>
         
+        <div class="content">
         <!-- présentatioin de la page -->
       <section class="home">
             <div class="resume">
@@ -39,9 +39,9 @@
 
             </div>
             <div class="img"><img src="./IMG_20220502_111930f.jpg" alt=""></div>
+            <a href="#down"><span class="bas"><ion-icon name="arrow-down-circle"></ion-icon></span></a>
         </section>
             
-            <a href="#down"><span class="bas"><ion-icon name="arrow-down-circle"></ion-icon></span></a>
             
     </div>      
 
@@ -94,7 +94,7 @@
         for (var i = 0; i < collects.length; i++) {
           var windowHeight = window.innerHeight;
           var elementTop = collects[i].getBoundingClientRect().top;
-          var elementVisible = 100;
+          var elementVisible = 50;
           if (elementTop < windowHeight - elementVisible) {
             collects[i].classList.add("active");
           } else {
