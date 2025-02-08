@@ -85,7 +85,7 @@
         for (var i = 0; i < collects.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = collects[i].getBoundingClientRect().top;
-            var elementVisible = 50;
+            var elementVisible = 10;
             if (elementTop < windowHeight - elementVisible) {
             collects[i].classList.add("active");
             } else {
