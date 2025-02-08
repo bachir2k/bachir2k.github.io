@@ -333,7 +333,7 @@ html {
 .description {
     
     display: flex;
-    margin-top: 2%;
+    
     justify-content: center;
     gap: 20px;
 }
